@@ -11,12 +11,11 @@ btnparola.addEventListener('click', function(){
    let parolaAlContrario = '';
     for (let i = parolaInserita.length - 1; i >= 0; i--) { 
      parolaAlContrario += parolaInserita[i];
-   }
-  
+    }
     return parolaAlContrario;
   }
 
-  if( parola == reverse(parola)){
+  if( parola.toLowerCase() == reverse(parola).toLowerCase()){
     document.querySelector('h1').innerHTML = `${parola} è una parola palindroma`
   }else{
      document.querySelector('h1').innerHTML = `${parola} NON è una parola palindroma`
